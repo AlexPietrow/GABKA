@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gabka"
+version = "1.0.0"
+description = "GABKA (Generic Atmospheric Band Korrector Algorithm): telluric correction for ground-based solar spectra"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "A. G. M. Pietrow", email = "apietrow@aip.de"}]
+requires-python = ">=3.9"
+dependencies = ["numpy", "scipy", "matplotlib", "astropy"]
+
+[tool.setuptools]
+packages = ["gabka"]
+
+[tool.setuptools.package-data]
+gabka = ["data/*.npz", "data/*.npy"]

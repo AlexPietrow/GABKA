@@ -1,0 +1,6 @@
+build/
+*.egg-info/
+__pycache__/
+*.pyc
+.DS_Store
+examples/gabka_out/
